@@ -1,0 +1,184 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Header styling */
+header {
+    position: relative;
+    color: rgb(164, 65, 65);
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+.date, .time {
+    font-size: 1rem;
+    position: absolute;
+    right: 20px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.date {
+    top: 20px;
+}
+
+.time {
+    top: 45px;
+}
+
+/* Background sliding images */
+.bg-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: opacity 0.5s ease;
+}
+
+.bg1 {
+    background-image: url('santa.png');
+    opacity: 1;
+}
+
+.bg2 {
+    background-image: url('h.png'); /* Menutup tanda kutip */
+    opacity: 1; /* Ubah nilai opacity menjadi 1 untuk tampilan penuh */
+}
+
+.bg3 {
+    background-image: url('header.png');
+    opacity: 0;
+}
+
+/* Navbar styling */
+/* Navbar styling */
+nav {
+    position: fixed;
+    top: 0px; /* Mengubah dari 0 ke 5px untuk menaikkan navbar sedikit */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 5px 0; /* Mengurangi padding vertikal dari 10px ke 5px */
+    background-color: transparent; /* No background color */
+    box-shadow: none; /* No shadow */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: black; /* Default link color */
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0 10px; /* Adding horizontal space between links */
+}
+
+nav ul li a:hover {
+    transform: translateY(-3px); /* Hover effect */
+    color: #ff0000; /* Color change on hover */
+}
+
+nav ul li a.active {
+    color: #ffcc00; /* Active link color */
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+/* About and Contact section styling */
+.about, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contact-link {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-link:hover {
+    color: red;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-item {
+    margin-left: 20px;
+}
+
+/* Arrow button styling for background sliding */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.arrow-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
